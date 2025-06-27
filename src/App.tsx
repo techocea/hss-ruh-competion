@@ -1,9 +1,11 @@
-import Hero from "./components/shared/Hero.tsx";
+import HeroSection from "./components/shared/HeroSection.tsx";
+import MissionSection from "./components/shared/MissionSection.tsx";
 
 const App = () => {
     return (
         <div className="min-h-full bg-white">
-           <Hero/>
+           <HeroSection/>
+           <MissionSection/>
         </div>
     )
 }

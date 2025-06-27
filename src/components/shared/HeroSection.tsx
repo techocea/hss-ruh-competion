@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 
-const Hero = () => {
+const HeroSection = () => {
     return (
         <section className="pt-20 pb-16 bg-accent relative overflow-hidden">
             {/* Background SVG Decorations */}
@@ -103,4 +103,4 @@ const Hero = () => {
         </section>
     )
 }
-export default Hero
+export default HeroSection

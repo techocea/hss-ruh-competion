@@ -1,18 +1,10 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X } from 'lucide-react';
+import {NAV_ITEMS} from "../../utils/constants.ts";
 
 const Navbar = () => {
     const [isOpen, setIsOpen] = useState(false);
-
-    const navItems = [
-        { name: 'Home', path: '/' },
-        { name: 'About Us', path: '/about' },
-        { name: 'Projects', path: '/projects' },
-        { name: 'Vacancies', path: '/vacancies' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Feedback', path: '/feedback' },
-    ];
 
     return (
         <nav className="bg-white shadow-lg">
@@ -27,7 +19,7 @@ const Navbar = () => {
 
                     {/* Desktop Menu */}
                     <div className="hidden md:flex space-x-8">
-                        {navItems.map((item) => (
+                        {NAV_ITEMS.map((item) => (
                             <NavLink
                                 key={item.name}
                                 to={item.path}
@@ -54,7 +46,7 @@ const Navbar = () => {
                 {/* Mobile Menu */}
                 {isOpen && (
                     <div className="md:hidden py-4 border-t">
-                        {navItems.map((item) => (
+                        {NAV_ITEMS.map((item) => (
                             <NavLink
                                 key={item.name}
                                 to={item.path}
