@@ -27,6 +27,10 @@ html {
     @apply text-green-100;
 }
 
+@utility btn-link{
+    @apply text-green-700/80 hover:text-green-600/80;
+}
+
 .bg-primary{
     @apply bg-green-800;
 }

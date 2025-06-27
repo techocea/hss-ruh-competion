@@ -56,8 +56,7 @@ const HeroSection = () => {
                                 </button>
                             </Link>
                             <Link to="/vacancies">
-                                <button
-                                        className="btn-outline px-6 py-2 text-lg">
+                                <button className="btn-outline px-6 py-2 text-lg">
                                     Join Our Team
                                 </button>
                             </Link>
