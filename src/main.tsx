@@ -4,6 +4,7 @@ import {BrowserRouter, Routes, Route} from "react-router-dom";
 import './index.css'
 import App from './App.tsx'
 import Layout from "./components/layout/layout.tsx";
+import AboutPage from "./pages/AboutPage.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -11,6 +12,7 @@ createRoot(document.getElementById('root')!).render(
           <Routes>
               <Route path="/" element={<Layout />}>
                   <Route path="/" element={<App />} />
+                  <Route path="/about" element={<AboutPage />} />
                   {/*<Route path="/projects" element={<Projects />} />*/}
                   {/*<Route path="/vacancies" element={<Vacancies />} />*/}
                   {/*<Route path="/contact" element={<Contact />} />*/}

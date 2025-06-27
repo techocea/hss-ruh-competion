@@ -1,4 +1,5 @@
 import {MISSIONS} from "../../utils/constants.ts";
+import StatCard from "../common/StatCard.tsx";
 
 const MissionSection = () => {
     return (
@@ -52,34 +53,9 @@ const MissionSection = () => {
                 </div>
 
                 <div className="grid md:grid-cols-3 gap-8">
-                    {MISSIONS.map((mission, index) => (
-                        <div key={index} className="border rounded-lg border-slate-200 text-center hover:shadow-lg transition-shadow relative overflow-hidden">
-                            {/* Card-specific decorative elements */}
-                            <div className="absolute top-2 right-2 opacity-10">
-                                <svg width="40"
-                                     height="40"
-                                     viewBox="0 0 40 40"
-                                     className="text-green-300">
-                                    <circle cx="20"
-                                            cy="20"
-                                            r="15"
-                                            fill="currentColor"/>
-                                </svg>
-                            </div>
-                            <div className="p-8 relative z-10">
-                                <div className="flex justify-center mb-4">
-                                    <mission.icon className="w-8 h-8 text-green-600"/>
-                                </div>
-                                <h3 className="text-xl font-semibold text-green-800 mb-3">
-                                    {mission.title}
-                                </h3>
-                                <p className="text-gray-600">
-                                    {mission.description}
-                                </p>
-                            </div>
-                        </div>
-                    ))}
+                    <StatCard items={MISSIONS}/>
                 </div>
+
             </div>
         </section>
     )

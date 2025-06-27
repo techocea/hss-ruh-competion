@@ -1,7 +1,10 @@
-import Banner from "../common/Banner.tsx";
+import Banner from "../components/common/Banner.tsx";
+import MissionVision from "../components/shared/MissionVision.tsx";
+import OurImpact from "../components/shared/OurImpact.tsx";
 
-const HeroSection = () => {
+const AboutPage = () => {
     return (
+        <>
         <section className="pt-20 pb-16 bg-accent relative overflow-hidden">
             {/* Background SVG Decorations */}
             <div className="absolute top-10 left-4 opacity-10">
@@ -38,8 +41,17 @@ const HeroSection = () => {
                 </svg>
             </div>
 
-           <Banner title="Protecting Sri Lanka's Green Future" description="Join us in our mission to create a sustainable environment for future generations through community-driven conservation and environmental education" imageSrc="./src/assets/hero-hss.jpg" isHome={true}/>
+            <Banner
+                title="About GreenRoots Sri Lanka"
+                description="Founded in 2020, we are a dedicated team of environmental enthusiasts committed to protecting Sri Lanka's natural heritage for future generations."
+                imageSrc="./src/assets/about-hss.webp"
+                isHome={false}/>
         </section>
+
+            <MissionVision/>
+
+            <OurImpact/>
+        </>
     )
 }
-export default HeroSection
+export default AboutPage

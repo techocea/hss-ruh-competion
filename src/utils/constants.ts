@@ -1,4 +1,4 @@
-import {Earth, Leaf, Recycle,} from "lucide-react";
+import {Award, Earth, Eye, Leaf, Recycle, Target, Users,} from "lucide-react";
 
 export const NAV_ITEMS = [
     { name: 'Home', path: '/' },
@@ -7,7 +7,7 @@ export const NAV_ITEMS = [
     { name: 'Vacancies', path: '/vacancies' },
     { name: 'Contact', path: '/contact' },
     { name: 'Feedback', path: '/feedback' },
-] as const;
+];
 
 export const  MISSIONS = [
     {
@@ -25,4 +25,11 @@ export const  MISSIONS = [
         title: "Environmental Education",
         description: "Educating communities about environmental sustainability and climate change awareness."
     }
-] as const;
+];
+
+export const STATS = [
+    { icon: Users, title: "500+", description: "Volunteers" },
+    { icon: Target, title: "25", description: "Projects Completed" },
+    { icon: Eye, title: "1000+", description: "Trees Planted" },
+    { icon: Award, title: "15", description: "Communities Served" }
+]; 
