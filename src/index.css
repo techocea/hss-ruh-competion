@@ -8,11 +8,11 @@ html {
 }
 
 @utility btn-primary{
-    @apply bg-green-600 outline-0 border-none;
+    @apply bg-green-600 text-white rounded-lg outline-0 border-none;
 }
 
 @utility btn-outline{
-    @apply border-green-600 text-green-600 hover:bg-green-50;
+    @apply border border-green-600 text-green-600 rounded-lg hover:bg-green-50;
 }
 
 .bg-accent{
