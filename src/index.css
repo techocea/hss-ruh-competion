@@ -1,0 +1,46 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: none;     /* Firefox */
+   -ms-overflow-style: none;  /* IE 10+ */
+}
+
+@utility btn-primary{
+    @apply bg-green-600 outline-0 border-none;
+}
+
+@utility btn-outline{
+    @apply border-green-600 text-green-600 hover:bg-green-50;
+}
+
+.bg-accent{
+    @apply bg-green-50;
+}
+
+.text-primary{
+    @apply text-green-800;
+}
+
+.text-secondary{
+    @apply text-green-100;
+}
+
+.bg-primary{
+    @apply bg-green-800;
+}
+
+.input{
+    @apply border-slate-200 bg-inherit placeholder:text-slate-400;
+}
+
+h1, h2, h3, h4, h5, h6{
+    @apply text-green-800;
+}
+
+body{
+    @apply text-slate-600;
+    font-family: "Segoe UI", sans-serif;
+}
+
