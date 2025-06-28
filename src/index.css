@@ -36,7 +36,7 @@ html {
 }
 
 .input{
-    @apply border-slate-200 bg-inherit placeholder:text-slate-400;
+    @apply border-slate-200 bg-inherit placeholder:text-slate-400 w-full;
 }
 
 h1, h2, h3, h4, h5, h6{

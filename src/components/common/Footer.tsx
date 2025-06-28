@@ -22,7 +22,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    <div className="pl-10">
+                    <div className="lg:pl-10">
                         <p className="text-lg font-semibold mb-4">Quick Links</p>
                         <ul className="space-y-2 text-green-100">
                             <li><a href="/about"

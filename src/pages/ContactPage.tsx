@@ -1,5 +1,7 @@
 import HeroBackground from "../components/common/HeroBackground.tsx";
 import Banner from "../components/common/Banner.tsx";
+import ContactForm from "../components/shared/ContactForm.tsx";
+import ContactDetails from "../components/shared/ContactDetails.tsx";
 
 const ContactPage = () => {
     return (
@@ -15,8 +17,13 @@ const ContactPage = () => {
                     isHome={false}/>
 
             </section>
-            <div>
-
+            <div className="py-16 px-4 container mx-auto grid md:grid-cols-2 gap-8">
+                <div>
+                    <ContactForm/>
+                </div>
+                <div>
+                    <ContactDetails/>
+                </div>
             </div>
         </>
     );
