@@ -18,7 +18,7 @@ const ProjectsPage = () => {
                     isHome={false}/>
 
             </section>
-            <div className="py-16 container mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="py-16 lg:max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <ProjectCard items={PROJECTS}/>
             </div>
         </>

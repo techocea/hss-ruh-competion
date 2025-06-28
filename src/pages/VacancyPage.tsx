@@ -18,7 +18,7 @@ const VacancyPage = () => {
                     isHome={false}/>
 
             </section>
-            <div className="py-16 container mx-auto grid md:grid-cols-2 gap-8">
+            <div className="py-16 lg:max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
                 <VacancyCard items={VACANCIES}/>
             </div>
         </>

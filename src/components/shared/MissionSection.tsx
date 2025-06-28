@@ -41,7 +41,7 @@ const MissionSection = () => {
                 </svg>
             </div>
 
-            <div className="container mx-auto px-4 relative z-10">
+            <div className="lg:max-w-6xl mx-auto px-4 relative z-10">
                 <div className="text-center mb-12">
                     <h2 className="text-3xl md:text-4xl font-bold text-green-800 mb-4">
                         Our Mission

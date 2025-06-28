@@ -11,8 +11,8 @@ const Navbar = () => {
             <div className="lg:max-w-6xl mx-auto px-4">
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center space-x-2">
-                        <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                            <span className="text-white font-bold text-lg">G</span>
+                        <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center">
+                            <img src="./src/assets/logo.svg" alt="logo fro greenroots sri lanka"/>
                         </div>
                         <span className="text-xl font-bold text-green-800">GreenRoots Sri Lanka</span>
                     </div>

@@ -62,7 +62,7 @@ const FeaturedProject = () => {
                     </p>
                 </div>
 
-                <div className="max-w-4xl mx-auto overflow-hidden relative">
+                <div className="max-w-5xl lg:max-w-6xl mx-auto overflow-hidden relative">
                     {/* Card decorative elements */}
                     <div className="absolute top-4 left-4 opacity-10">
                         <svg width="50"
@@ -85,7 +85,7 @@ const FeaturedProject = () => {
                             <img
                                 src="./src/assets/featured-hss.jpg"
                                 alt="Tree planting project"
-                                className="rounded-lg shadow-xl w-full h-96 object-cover relative z-10"
+                                className="rounded-lg w-full h-96 object-cover relative z-10"
                             />
                             {/* Image overlay decoration */}
                             <div className="absolute bottom-4 right-4 opacity-20">

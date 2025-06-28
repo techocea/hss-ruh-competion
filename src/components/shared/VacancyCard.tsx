@@ -28,7 +28,7 @@ const VacancyCard = ({items}:VacancyCardProps) => {
     return (
         <>
             {items.map((vacancy) => (
-                <div key={vacancy.id} className="bg-white border rounded-lg border-slate-200 hover:shadow-lg transition-shadow">
+                    <div key={vacancy.id} className="bg-white border rounded-lg border-slate-200 hover:shadow-lg transition-shadow">
                     <div className="p-6">
                         <div className="flex justify-between items-start mb-4">
                             <span className={`${getTypeColor(vacancy.type)} rounded-full py-0.5 font-semibold text-xs px-2`}>
@@ -63,7 +63,7 @@ const VacancyCard = ({items}:VacancyCardProps) => {
                             <ul className="text-sm text-gray-600 space-y-1">
                                 {vacancy.requirements.map((req, index) => (
                                     <li key={index}
-                                        className="flex items-start gap-2">
+                                        className="flex items-center justify-start gap-2">
                                         <span className="text-green-600 mt-1">•</span>
                                         <span>{req}</span>
                                     </li>

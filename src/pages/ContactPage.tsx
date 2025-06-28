@@ -17,7 +17,7 @@ const ContactPage = () => {
                     isHome={false}/>
 
             </section>
-            <div className="py-16 px-4 container mx-auto grid md:grid-cols-2 gap-8">
+            <div className="py-16 px-4 lg:px-0 lg:max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
                 <div>
                     <ContactForm/>
                 </div>

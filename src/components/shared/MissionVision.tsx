@@ -1,7 +1,7 @@
 const MissionVision = () => {
     return (
         <section className="py-16">
-            <div className="container mx-auto px-4">
+            <div className="lg:max-w-6xl mx-auto px-4">
                 <div className="grid md:grid-cols-2 gap-12">
                     <div className="border rounded-lg border-slate-200 p-8">
                         <div className="p-0">

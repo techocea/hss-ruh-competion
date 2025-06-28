@@ -8,7 +8,7 @@ html {
 }
 
 @utility btn-primary{
-    @apply bg-green-600 text-white rounded-lg outline-0 border-none;
+    @apply bg-green-600 hover:bg-green-600/80 cursor-pointer text-white rounded-lg outline-0 border-none;
 }
 
 @utility btn-outline{
@@ -37,6 +37,10 @@ html {
 
 .input{
     @apply border-slate-200 bg-inherit placeholder:text-slate-400 w-full;
+}
+
+.radio-primary {
+    @apply bg-white border-green-700 rounded-full text-green-700;
 }
 
 h1, h2, h3, h4, h5, h6{

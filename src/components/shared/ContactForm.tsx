@@ -90,7 +90,7 @@ const ContactForm = () => {
                         name="message"
                         value={formData.message}
                         onChange={handleInputChange}
-                        className="input min-h-32"
+                        className="input min-h-32 pt-3"
                         placeholder="Enter your message here..."
                     />
                 </div>
