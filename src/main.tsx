@@ -9,6 +9,7 @@ import ProjectsPage from "./pages/ProjectsPage.tsx";
 import VacancyPage from "./pages/VacancyPage.tsx";
 import ContactPage from "./pages/ContactPage.tsx";
 import FeedbackPage from "./pages/FeedbackPage.tsx";
+import NotFound from "./pages/NotFound.tsx";
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -21,7 +22,7 @@ createRoot(document.getElementById('root')!).render(
                   <Route path="/vacancies" element={<VacancyPage />} />
                   <Route path="/contact" element={<ContactPage />} />
                   <Route path="/feedback" element={<FeedbackPage />} />
-                  {/*<Route path="*" element={<NotFound />} />*/}
+                  <Route path="*" element={<NotFound />} />
               </Route>
           </Routes>
       </BrowserRouter>
