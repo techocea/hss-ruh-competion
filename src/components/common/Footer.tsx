@@ -8,8 +8,9 @@ const Footer = () => {
                 <div className="grid md:grid-cols-4 w-full gap-8">
                     <div className="">
                         <div className="flex items-center space-x-2 mb-4">
-                            <div className="w-10 h-10 bg-green-600 rounded-full flex items-center justify-center">
-                                <span className="text-white font-bold text-lg">G</span>
+                            <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center">
+                                <img src="/logo.svg"
+                                     alt="logo fro greenroots sri lanka"/>
                             </div>
                             <span className="text-xl font-bold">GreenRoots Sri Lanka</span>
                         </div>
@@ -70,7 +71,7 @@ const Footer = () => {
                     <p className="text-sm lg:text-xs">&copy; {new Date().getFullYear()} GreenRoots Sri Lanka. All rights reserved.</p>
 
                     <p className="text-sm lg:text-xs">Designed & Developed by <span>
-                        <Link to="https://imbrightly.vercel.app/">Brightly Dunsford</Link>
+                        <Link to="https://imbrightly.vercel.app/" className="underline">Brightly Dunsford</Link>
                     </span></p>
 
                     <p className="text-sm lg:text-xs">
