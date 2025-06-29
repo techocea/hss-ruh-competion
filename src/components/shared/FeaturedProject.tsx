@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import {Calendar, MapPin, Users} from "lucide-react";
+import {Calendar, ChevronRight, MapPin, Users} from "lucide-react";
 
 const FeaturedProject = () => {
     return (
@@ -83,7 +83,7 @@ const FeaturedProject = () => {
                     <div className="md:flex">
                         <div className="md:w-1/2 relative">
                             <img
-                                src="./src/assets/featured-hss.jpg"
+                                src="/featured-hss.jpg"
                                 alt="Tree planting project"
                                 className="rounded-lg w-full h-96 object-cover relative z-10"
                             />
@@ -98,7 +98,7 @@ const FeaturedProject = () => {
                                 </svg>
                             </div>
                         </div>
-                        <div className="md:w-1/2 p-8 relative">
+                        <div className="md:w-1/2 p-0 py-8 lg:p-8 relative">
                             {/* Content area decoration */}
                             <div className="absolute top-2 right-2 opacity-8">
                                 <svg width="30"
@@ -136,16 +136,16 @@ const FeaturedProject = () => {
                                 </div>
                             </div>
 
-                            <Link to="/projects">
-                                <button className="btn btn-link px-0 py-2 text-lg">
-                                    Learn More About Our Projects
-                                </button>
-                            </Link>
+                            <button className="btn btn-link px-0 py-2 text-lg">
+                                <Link to="/projects" className="flex items-center justify-center gap-2">
+                                    Learn More About Our Projects <ChevronRight/>
+                                </Link>
+                            </button>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-    )
+    );
 }
 export default FeaturedProject

@@ -21,16 +21,16 @@ const Banner = ({title,description,isHome,imageSrc}:BannerProps) => {
 
                     {isHome && (
                         <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-                            <Link to="/projects">
-                                <button className="btn-primary px-6 py-2 text-lg">
+                            <button className="btn-primary px-6 py-2 text-lg">
+                                <Link to="/projects">
                                     View Our Projects
-                                </button>
-                            </Link>
-                            <Link to="/vacancies">
-                                <button className="btn-outline px-6 py-2 text-lg">
+                                </Link>
+                            </button>
+                            <button className="btn-outline px-6 py-2 text-lg">
+                                <Link to="/vacancies">
                                     Join Our Team
-                                </button>
-                            </Link>
+                                </Link>
+                            </button>
                         </div>
                     )}
 
@@ -72,6 +72,6 @@ const Banner = ({title,description,isHome,imageSrc}:BannerProps) => {
                 </div>
             </div>
         </div>
-    )
+    );
 }
 export default Banner

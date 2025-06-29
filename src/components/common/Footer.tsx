@@ -1,4 +1,5 @@
 import { Facebook, Twitter, Instagram, Mail, Phone, MapPin } from 'lucide-react';
+import {Link} from "react-router-dom";
 
 const Footer = () => {
     return (
@@ -16,9 +17,9 @@ const Footer = () => {
                             Protecting Sri Lanka's environment through community action and sustainable practices.
                         </p>
                         <div className="flex space-x-4">
-                            <Facebook className="w-6 h-6 hover:text-green-300 cursor-pointer" />
-                            <Twitter className="w-6 h-6 hover:text-green-300 cursor-pointer" />
-                            <Instagram className="w-6 h-6 hover:text-green-300 cursor-pointer" />
+                            <Facebook className="w-6 h-6 hover:text-green-300 cursor-pointer"/>
+                            <Twitter className="w-6 h-6 hover:text-green-300 cursor-pointer"/>
+                            <Instagram className="w-6 h-6 hover:text-green-300 cursor-pointer"/>
                         </div>
                     </div>
 
@@ -65,8 +66,16 @@ const Footer = () => {
                     </div>
                 </div>
 
-                <div className="border-t border-green-700 mt-8 pt-8 text-center text-green-100">
-                    <p>&copy; 2024 GreenRoots Sri Lanka. All rights reserved.</p>
+                <div className="border-t border-green-700 mt-8 flex flex-col lg:flex-row items-center justify-between w-full pt-8 text-green-100">
+                    <p className="text-sm lg:text-xs">&copy; {new Date().getFullYear()} GreenRoots Sri Lanka. All rights reserved.</p>
+
+                    <p className="text-sm lg:text-xs">Designed & Developed by <span>
+                        <Link to="https://imbrightly.vercel.app/">Brightly Dunsford</Link>
+                    </span></p>
+
+                    <p className="text-sm lg:text-xs">
+                        DCS | FOS | UOR
+                    </p>
                 </div>
             </div>
         </footer>

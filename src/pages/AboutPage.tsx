@@ -13,7 +13,7 @@ const AboutPage = () => {
             <Banner
                 title="About GreenRoots Sri Lanka"
                 description="Founded in 2020, we are a dedicated team of environmental enthusiasts committed to protecting Sri Lanka's natural heritage for future generations."
-                imageSrc="./src/assets/about-hss.webp"
+                imageSrc="/about-hss.webp"
                 isHome={false}/>
         </section>
 

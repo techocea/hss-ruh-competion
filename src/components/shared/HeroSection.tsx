@@ -7,7 +7,7 @@ const HeroSection = () => {
             {/* Background SVG Decorations */}
             <HeroBackground/>
 
-           <Banner title="Protecting Sri Lanka's Green Future" description="Join us in our mission to create a sustainable environment for future generations through community-driven conservation and environmental education" imageSrc="./src/assets/hero-hss.jpg" isHome={true}/>
+           <Banner title="Protecting Sri Lanka's Green Future" description="Join us in our mission to create a sustainable environment for future generations through community-driven conservation and environmental education" imageSrc="/hero-hss.jpg" isHome={true}/>
         </section>
     )
 }

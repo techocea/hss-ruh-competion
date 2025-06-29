@@ -8,7 +8,7 @@ const OurImpact = () => {
                 <h2 className="text-3xl md:text-4xl font-bold text-green-800 text-center mb-12">
                     Our Impact
                 </h2>
-                <div className="grid md:grid-cols-4 gap-8">
+                <div className="grid grid-cols-2 md:grid-cols-4 gap-4 lg:gap-8">
                    <StatCard items={STATS}/>
                 </div>
             </div>

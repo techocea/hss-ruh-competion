@@ -13,7 +13,7 @@ const ContactPage = () => {
                 <Banner
                     title="Contact Us"
                     description="Get in touch with GreenRoots Sri Lanka. We'd love to hear from you and discuss how we can work together for a greener future."
-                    imageSrc="./src/assets/contact-hss.webp"
+                    imageSrc="/contact-hss.webp"
                     isHome={false}/>
 
             </section>

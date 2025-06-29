@@ -12,7 +12,7 @@ const Navbar = () => {
                 <div className="flex justify-between items-center py-4">
                     <div className="flex items-center space-x-2">
                         <div className="w-10 h-10 bg-green-200 rounded-full flex items-center justify-center">
-                            <img src="./src/assets/logo.svg" alt="logo fro greenroots sri lanka"/>
+                            <img src="/logo.svg" alt="logo fro greenroots sri lanka"/>
                         </div>
                         <span className="text-xl font-bold text-green-800">GreenRoots Sri Lanka</span>
                     </div>
@@ -45,12 +45,12 @@ const Navbar = () => {
 
                 {/* Mobile Menu */}
                 {isOpen && (
-                    <div className="md:hidden py-4 border-t">
+                    <div className="md:hidden py-4">
                         {NAV_ITEMS.map((item) => (
                             <NavLink
                                 key={item.name}
                                 to={item.path}
-                                className="block py-2 text-gray-700 hover:text-green-600 transition-colors"
+                                className="block py-2 font-medium text-gray-700 hover:text-green-600 transition-colors"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.name}

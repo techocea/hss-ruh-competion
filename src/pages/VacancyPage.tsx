@@ -14,11 +14,11 @@ const VacancyPage = () => {
                     title="Join Our Team"
                     description="Be part of Sri Lanka's environmental conservation movement.
             Explore volunteer opportunities and career positions with GreenRoots."
-                    imageSrc="./src/assets/join-hss.webp"
+                    imageSrc="/join-hss.webp"
                     isHome={false}/>
 
             </section>
-            <div className="py-16 lg:max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
+            <div className="py-16 px-4 lg:px-0 lg:max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
                 <VacancyCard items={VACANCIES}/>
             </div>
         </>
